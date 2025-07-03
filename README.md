@@ -9,9 +9,12 @@ A Model Context Protocol (MCP) server implementation that provides access to the
 
 ## Installing Prerequisites
 These are pre-requisites for running the Northwind MCP server. You can use Warp Terminal for a streamlined installation experience, or follow manual installation steps.
-- Docker and Docker Compose
+- Docker
 - .NET 8.0 SDK
 - Make (optional, but recommended)
+
+**Note:** For Docker, if you're install for the first time, open the Docker Desktop application and follow the setup instructions before proceeding the next steps. Ensure Docker is running and you can access the Docker CLI.
+The Docker Desktop requires Virtualization to be enabled in your BIOS/UEFI settings. If you encounter issues, check the Docker Desktop documentation for troubleshooting.
 
 ### Option A: Using Warp Terminal (Recommended)
 
@@ -35,8 +38,7 @@ These are pre-requisites for running the Northwind MCP server. You can use Warp 
    
    **Windows:**
 
-If you don't have Chocolatey installed, you can install it first by running the following command. 
-You may need to open a PowerShell terminal with administrative privileges to install.
+    If you don't have Chocolatey installed, you can install it first by running the following command. You may need to open a PowerShell terminal with administrative privileges to install.
 
    ```powershell
    # Install Chocolatey first (if not installed):
@@ -46,11 +48,10 @@ You may need to open a PowerShell terminal with administrative privileges to ins
    choco install docker-desktop -y
    ```
 
-You can also install as a non-admin, check out [Non-Administrative](https://docs.chocolatey.org/en-us/choco/setup/#non-administrative-install) Installation. 
+    You can also install as a non-admin, check out [Non-Administrative](https://docs.chocolatey.org/en-us/choco/setup/#non-administrative-install) Installation. 
 For Non-Administrative Installations, need to set the installation directory for Chocolatey.
    ```bash
    # Set directory for installation - Chocolatey does not lock
-   # down the directory if not the default
    $InstallDir='your-directory-for-installation'
    $env:ChocolateyInstall="$InstallDir"
    
@@ -104,10 +105,6 @@ For Non-Administrative Installations, need to set the installation directory for
 - **macOS:** Install Xcode Command Line Tools: `xcode-select --install`
 - **Windows:** Install via Chocolatey: `choco install make` or use Git Bash
 - **Linux:** Usually pre-installed, or `sudo apt install make` / `sudo yum install make`
-
-## Docker Desktop Setup
-For docker desktop, if you're install for the first time, open the Docker Desktop application and follow the setup instructions before proceeding the next steps. Ensure Docker is running and you can access the Docker CLI.
-The Docker Desktop requires Virtualization to be enabled in your BIOS/UEFI settings. If you encounter issues, check the Docker Desktop documentation for troubleshooting.
 
 ## Clone and Setup Database
 ### Option A: Automated Setup (Recommended)
