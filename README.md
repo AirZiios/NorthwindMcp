@@ -56,6 +56,9 @@ For Non-Administrative Installations, need to set the installation directory for
    $env:ChocolateyInstall="$InstallDir"
    
    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+   # Then install Docker:
+   choco install docker-desktop -y
    ```
 
 3. **Install .NET SDK using Warp:**
