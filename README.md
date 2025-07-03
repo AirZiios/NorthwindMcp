@@ -13,8 +13,8 @@ These are pre-requisites for running the Northwind MCP server. You can use Warp 
 - .NET 8.0 SDK
 - Make (optional, but recommended)
 
-**Note:** For Docker, if you're install for the first time, open the Docker Desktop application and follow the setup instructions before proceeding the next steps. Ensure Docker is running and you can access the Docker CLI.
-The Docker Desktop requires Virtualization to be enabled in your BIOS/UEFI settings. If you encounter issues, check the Docker Desktop documentation for troubleshooting.
+‼️**Note‼️ For Docker, if you're install for the first time, after installation done, you may need to open the Docker Desktop application and follow the setup instructions before proceeding the next steps. 
+Also the Docker Desktop requires Virtualization to be enabled in your BIOS/UEFI settings. If you encounter issues, check the Docker Desktop documentation for troubleshooting.
 
 ### Option A: Using Warp Terminal (Recommended)
 
